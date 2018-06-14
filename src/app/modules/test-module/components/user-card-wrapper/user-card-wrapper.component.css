@@ -1,0 +1,12 @@
+.my-grid-tile {
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+  background: #F27847;
+}
+
+
+
+/* mat-card {
+  width: 100%;
+  } */

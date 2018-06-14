@@ -4,8 +4,8 @@ import { Routes, RouterModule } from "@angular/router";
 import { MainImageComponent } from '../../components/main-image/main-image.component';
 
 const appRoutes: Routes = [
-  { path: '', component: MainImageComponent },
-  {path: 'submodule', loadChildren: '../../modules/test-module/test-module.module#TestModuleModule'},
+  //{ path: '', component: MainImageComponent },
+  {path: '', loadChildren: '../../modules/test-module/test-module.module#TestModuleModule'},
 ]
 @NgModule({
   imports: [

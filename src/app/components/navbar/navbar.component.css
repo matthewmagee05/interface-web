@@ -35,8 +35,6 @@ a:visited {
 }
 
 a:hover {
-    /* text-decoration: underline;
-    text-decoration-color: #f06932; */
     border-bottom: 2px solid #f26925;
 }
 

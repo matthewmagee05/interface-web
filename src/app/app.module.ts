@@ -6,7 +6,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
@@ -28,7 +27,6 @@ import { RoutingModule } from './modules/routing/routing.module';
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule,
     MatToolbarModule,
     MatSidenavModule,
     BrowserAnimationsModule,

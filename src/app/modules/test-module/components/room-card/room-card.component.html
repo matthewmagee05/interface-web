@@ -1,0 +1,45 @@
+<mat-card-header>
+  Room {{room.roomNumber}} | {{room.roomNumbers.length}} Beds | {{room.roomNumbers.length - room.userID.length}} Remaining
+</mat-card-header>
+<mat-divider></mat-divider>
+
+<mat-grid-list cols='2'>
+  <div *ngFor="let item of room.roomNumbers">
+    <mat-grid-tile>
+      <div *ngIf="room.gender == 'Male'">
+        <img src="../../../../../assets/img/male.png" style="width:50px; border-radius: 50%">
+        <div>
+          <font size='2'>ID:1234</font>
+        </div>
+        <div class="boxed-room"> {{item}}</div>
+      </div>
+
+      <div *ngIf="room.gender == 'Female'">
+        <img src="../../../../../assets/img/female.png" style="width:50px; border-radius: 50%">
+        <div>
+          <font size='2'>ID:4321</font>
+        </div>
+        <div class="boxed-room">{{item}}</div>
+      </div>
+    </mat-grid-tile>
+
+  </div>
+</mat-grid-list>
+
+<mat-grid-list cols="8">
+  <mat-grid-tile>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="6">
+      <mat-form-field>
+          <mat-select placeholder="User">
+              <mat-option *ngFor="let user of room.userID">
+                  {{ user }}
+                </mat-option>
+          </mat-select>
+        </mat-form-field>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+  </mat-grid-tile>
+</mat-grid-list>
+
